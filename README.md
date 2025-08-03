@@ -11,5 +11,4 @@
 
 ## 📕 Latest Blog Posts
 
-- 참고: https://devpad.tistory.com/165
-<ul></ul>
+<ul><li><a href='https://ktome.tistory.com/2' target='_blank'>Load Average 와 시스템 부하</a></li></ul>
