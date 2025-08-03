@@ -27,22 +27,37 @@ const parser = new Parser({
     }});
 
 (async () => {
+    ////////////
+    const feed = await parser.parseURL('https://ktome.tistory.com/rss');
 
+    if (!feed.items || feed.items.length === 0) {
+        console.error('❗ 피드 항목이 비어있습니다.');
+        process.exit(1);
+    }
+
+    text += `<ul>`;
+
+    for (let i = 0; i < Math.min(10, feed.items.length); i++) {
+        const item = feed.items[i];
+        if (!item) continue;
+
+        const { title = "제목 없음", link = "#" } = item;
+
+        console.log(`${i + 1}번째 게시물`);
+        console.log(`추가될 제목: ${title}`);
+        console.log(`추가될 링크: ${link}`);
+        text += `<li><a href='${link}' target='_blank'>${title}</a></li>`;
+    }
+
+    text += `</ul>`;
+
+    
+    /*
     // 피드 목록
     const feed = await parser.parseURL('https://ktome.tistory.com/rss');
 
     text += `<ul>`;
 
-    // 최신글 10개의 글의 제목과 링크를 가져온 후 text에 추가 
-    /*
-    for (let i = 0; i < Math.min(10, feed.items.length); i++) {
-    const { title, link } = feed.items[i];
-    console.log(`${i + 1}번째 게시물`);
-    console.log(`추가될 제목: ${title}`);
-    console.log(`추가될 링크: ${link}`);
-    text += `<li><a href='${link}' target='_blank'>${title}</a></li>`;
-    }
-    */
     // 최신글 10개의 글의 제목과 링크를 가져온 후 text에 추가
     for (let i = 0; i < 1; i++) {
         const {title, link} = feed.items[i];
@@ -51,9 +66,9 @@ const parser = new Parser({
         console.log(`추가될 링크: ${link}`);
         text += `<li><a href='${link}' target='_blank'>${title}</a></li>`;
     }
-
-
+    
     text += `</ul>`;
+    */
 
     // README.md 파일 생성
     writeFileSync('README.md', text, 'utf8', (e) => {
