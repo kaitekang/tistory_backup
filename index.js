@@ -3,6 +3,7 @@ import Parser from "rss-parser";
 
 /**
  * README.MD에 작성될 페이지 텍스트
+ * 참고: https://devpad.tistory.com/165
  * @type {string}
  */
 let text = `# Hi there 👋
