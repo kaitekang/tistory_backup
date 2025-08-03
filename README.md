@@ -1,21 +1,13 @@
 # Hi there 👋
-- tistory 백업용 github registry 입니다.
-- github action을 통해 블로그 최신 URL 10개를 업로드합니다.
-- 참고: https://devpad.tistory.com/165
 
 ## 이런 환경에 익숙해요✍🏼
-<p>
-  <img alt="" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=Linux&logoColor=black"/>
-  <img alt="" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=Kubernetes&logoColor=white"/>
-  <img alt="" src="https://img.shields.io/badge/Ceph-EF3AAB?style=flat-square&logo=Ceph&logoColor=white"/>
-</p>
 
 ## 언어
-<p>
-  <img alt="" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
-  <img alt="" src="https://img.shields.io/badge/Bash%20Script-black?style=flat-square&logo=GNU-Bash&logoColor=white"/>
-</p>
 
+<p>
+  <img alt="" src= "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> 
+  <img alt="" src= "https://img.shields.io/badge/TypeScript-black?logo=typescript&logoColor=blue"/>
+</p>
 
 ## 📕 Latest Blog Posts
 
