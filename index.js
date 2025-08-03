@@ -29,7 +29,7 @@ const parser = new Parser({
 (async () => {
 
     // 피드 목록
-    const feed = await parser.parseURL('https://devpad.tistory.com/rss');
+    const feed = await parser.parseURL('https://ktome.tistory.com/rss');
 
     text += `<ul>`;
 
