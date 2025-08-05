@@ -17,4 +17,4 @@
 
 ## 📕 Latest Blog Posts
 
-<ul><li><a href='https://ktome.tistory.com/2' target='_blank'>Load Average 와 시스템 부하</a></li></ul>
+<ul><li><a href='https://ktome.tistory.com/3' target='_blank'>[rook] Helm 배포된 Rook Ceph 클러스터 완전히 제거하기</a></li><li><a href='https://ktome.tistory.com/2' target='_blank'>Load Average 와 시스템 부하</a></li></ul>
